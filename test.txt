@@ -1,0 +1,31 @@
+MachineTYPESSSSSS defaultdict(<class 'list'>, {'2b6079b79b994e86a44afeb7889a56ff': ['1a5f6fe3b5594bd3bbcb96f7c46a5a1e'], '9a13323cc7f74a0796a4fdc85b8b903e': ['649cbc2cd8044bd68e27aba36ba8e207'], 'd5e2e25b454748dbb07239dd2683507f': ['54c89bf249284d2a8ddc9f6645476449'], '8be060a49c8747abb3d6b29df44ec936': ['45edf34eadf74021b33515d001360ead']})
+
+0 | 2 [(None, 'd5e2e25b454748dbb07239dd2683507f', '45bbc94d6a9d4746b39bbe8948888656', None, '1970-01-01 02:00:00.000000'), (None, '2b6079b79b994e86a44afeb7889a56ff', '45bbc94d6a9d4746b39bbe8948888656', None, '1970-01-01 02:00:00.000000')]
+1 | 4 [(None, '8be060a49c8747abb3d6b29df44ec936', '36535a803e7a4a7392be7a99f9e0d77b', '1970-01-02 00:00:00.000000', '1970-01-01 01:00:00.000000'), (None, '9a13323cc7f74a0796a4fdc85b8b903e', '36535a803e7a4a7392be7a99f9e0d77b', '1970-01-02 00:00:00.000000', '1970-01-01 01:00:00.000000'), (None, 'd5e2e25b454748dbb07239dd2683507f', '3958809d465e40ce82a3395022689ef0', '1970-01-02 00:00:00.000000', '1970-01-01 03:00:00.000000'), (None, '9a13323cc7f74a0796a4fdc85b8b903e', '3958809d465e40ce82a3395022689ef0', '1970-01-02 00:00:00.000000', '1970-01-01 03:00:00.000000')]
+2 | 2 [(None, '8be060a49c8747abb3d6b29df44ec936', 'e6773312756c4898880bb2f93fcdc5c4', '1970-01-02 00:00:00.000000', '1970-01-01 02:00:00.000000'), (None, '2b6079b79b994e86a44afeb7889a56ff', 'e6773312756c4898880bb2f93fcdc5c4', '1970-01-02 00:00:00.000000', '1970-01-01 02:00:00.000000')]
+
+
+machineIntervals = {'1a5f6fe3b5594bd3bbcb96f7c46a5a1e': [], '649cbc2cd8044bd68e27aba36ba8e207': [], '54c89bf249284d2a8ddc9f6645476449': [], '45edf34eadf74021b33515d001360ead': []}
+
+strip = dt.datetime.strptime(duration, "%Y-%m-%d %H:%M:%S.%f")
+duration = strip.hour * 3600 + strip.minute * 60 + strip.second
+
+---------- availability ----------
+('54c89bf249284d2a8ddc9f6645476449', {(datetime.datetime(2024, 12, 27, 0, 0), datetime.datetime(2024, 12, 30, 23, 59)): [[{}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{}]], (datetime.datetime(2024, 12, 31, 0, 0), datetime.datetime(2025, 1, 10, 23, 59)): [[{}], [{'from': datetime.time(10, 0), 'to': datetime.time(16, 0)}], [{'from': datetime.time(10, 0), 'to': datetime.time(16, 0)}], [{'from': datetime.time(10, 0), 'to': datetime.time(16, 0)}], [{}], [{}], [{}]]})
+('45edf34eadf74021b33515d001360ead', {(datetime.datetime(2025, 1, 1, 0, 0), datetime.datetime(2025, 1, 31, 23, 59)): [[{}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{'from': datetime.time(9, 0), 'to': datetime.time(17, 0)}], [{}]]})
+
+---------- scheduled ----------
+
+
+---------- downtimes ----------
+('45edf34eadf74021b33515d001360ead', [('2024-12-29 00:00:00.000000', '2024-12-29 23:59:00.000000')])
+
+---------- holidays ----------
+('54c89bf249284d2a8ddc9f6645476449', [('2024-12-31 00:00:00.000000', '2024-12-31 23:59:00.000000'), ('2025-01-01 00:00:00.000000', '2025-01-01 23:59:00.000000')])
+('45edf34eadf74021b33515d001360ead', [('2024-12-31 00:00:00.000000', '2024-12-31 23:59:00.000000'), ('2025-01-01 00:00:00.000000', '2025-01-01 23:59:00.000000')])
+2024-12-27 00:00:00 2024-12-27 23:59:00
+2024-12-27 00:00:00 2024-12-27 23:59:00
+2024-12-27 00:00:00 2024-12-27 23:59:00
+
+
+54c89bf249284d2a8ddc9f6645476449
